@@ -79,12 +79,12 @@ if( isset($_POST["submit"]) ){
             </p> 
             
             <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Foto</label>
-                            <input type="file" class="form-control" id="exampleInputPassword1" name="foto"
-                                value="<?= $student["foto"] ?>">
-                        </div>
+               <label for="exampleInputPassword1" class="form-label">Foto</label>
+               <input type="file" class="form-control" id="exampleInputPassword1" name="foto"
+                value="<?= $student["foto"] ?>">
+            </div>
             
-            <button type="submit" name="submit">Masukkan Data Anda</button>
+            <button type="submit" class="btn btn-primary" name="submit">Masukan Data anda</button>
         </form>
     </p>
     <a href="table.php" class="btn btn-primary">Kembali</a>

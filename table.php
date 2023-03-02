@@ -7,8 +7,6 @@
     if ( isset($_POST["cari"] )) {
         $students = cari($_POST["keyword"]);
     }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +29,9 @@
         }
         .tabel {
             width:100px;
+        }
+        th{
+            text-align:center;
         }
 
     </style>
@@ -60,8 +61,7 @@
             <th>Rombel</th>
             <th>Rayon</th>
             <th>Status</th>
-            <th>Aksi</th>
-            <th>Aksi</th>
+            <th colspan="2">Aksi</th>
         </tr>
         <tbody>
         

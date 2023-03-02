@@ -64,6 +64,13 @@
     return mysqli_affected_rows($conn);
 }
 
+if(isset($_POST[""])){
+    if($_POST["username"] == "reyfal" && $_POST["password"] == "123"){
+            header("Location: table.php");
+    }else{
+        $error = true;
+    }
+}
 
 function cari($keyword){
     $query = "SELECT * FROM students

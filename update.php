@@ -53,41 +53,64 @@ if( isset($_POST["submit"]) ){
   <div class="card-body">
     <h5 class="card-title">Edit</h5>
     <p class="card-text"> 
+
+    <p>
+        <input type="hidden" name="id" id="" value="<?= $student["id"]?>">
+    </p>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+<div class="card" style="width: 25rem;">
+  <div class="card-body">
+    <h5 class="card-title">ubah bio data</h5>
+    <p class="card-text"><ul>
         <form action="" method="post">
-            <p>
+        <p>
                 <input type="hidden" name="id" id="" value="<?= $student["id"]?>">
             </p>
             <p>
-                <label for="">Nama</label>
-                <input type="text" name="nama" id="" value="<?= $student["nama"]?>">
-            </p>      
+            <h6 class="card-subtitle mb-2 text-muted"> <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nama</label>
+    <input type="text" class="form-control"name="nama" value="<?= $student["nama"]?>">
+    <div id="emailHelp" class="form-text"></div>
+            </p>
+           
             <p>
-                <label for="">Nis</label>
-                <input type="text" name="nis" id="" value="<?= $student["nis"]?>">
+            <h6 class="card-subtitle mb-2 text-muted"> <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nis</label>
+    <input type="text" class="form-control"name="nis" value="<?= $student["nis"]?>">
+    <div id="emailHelp" class="form-text"></div>
             </p>
             <p>
-                <label for="">Rombel</label>
-                <input type="text" name="rombel" id="" value="<?= $student["rombel"]?>">
+            <h6 class="card-subtitle mb-2 text-muted"> <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Rombel</label>
+    <input type="text" class="form-control"name="rombel" value="<?= $student["rombel"]?>">
+    <div id="emailHelp" class="form-text"></div>
             </p>
             <p>
-                <label for="">Rayon</label>
-                <input type="text" name="rayon" id="" value="<?= $student["rayon"]?>">
+            <h6 class="card-subtitle mb-2 text-muted"> <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Rayon</label>
+    <input type="text" class="form-control"name="rayon" value="<?= $student["rayon"]?>">
+    <div id="emailHelp" class="form-text"></div>
             </p>
             <p>
-                <label for="">Status</label>
-                <input type="text" name="status" id="" value="<?= $student["status"]?>">
-            </p> 
-            
-            <div class="mb-3">
-               <label for="exampleInputPassword1" class="form-label">Foto</label>
-               <input type="file" class="form-control" id="exampleInputPassword1" name="foto"
-                value="<?= $student["foto"] ?>">
-            </div>
-            
-            <button type="submit" class="btn btn-primary" name="submit">Masukan Data anda</button>
+            <h6 class="card-subtitle mb-2 text-muted"> <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Status</label>
+    <input type="text" class="form-control"name="status" value="<?= $student["status"]?>">
+    <div id="emailHelp" class="form-text"></div>
+
+    <div class="mb-3">
+        <label for="formFileDisabled" class="form-label">Foto</label>
+        <input class="form-control" type="file" id="formFileDisabled" name="foto">
+    </div>
+
+            </p>
+            <button type="submit" class="btn btn-primary" name="submit">Masukan data</button>
         </form>
-    </p>
+    </ul></p>
     <a href="table.php" class="btn btn-primary">Kembali</a>
+  </div>
+</div>
+</div>
   </div>
 </div>
 </div>

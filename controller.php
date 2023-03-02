@@ -39,28 +39,29 @@
         return mysqli_affected_rows($conn);
     } 
 
-    function ubahData( $post ){
-        global $conn;
-        $id = $post["id"];  
-        $nama = htmlspecialchars($post["nama"]);
-        $nis = htmlspecialchars($post["nis"]);
-        $rombel = htmlspecialchars($post["rombel"]);
-        $rayon = htmlspecialchars($post["rayon"]);
-        $status = htmlspecialchars($post["status"]);
-        $foto = htmlspecialchars($foto["foto"]);
+    function ubahData($post)
+{
+    global $conn;
+    $id = $post["id"];
+    $nama = htmlspecialchars($post["nama"]);
+    $nis = htmlspecialchars($post["nis"]);
+    $rombel = htmlspecialchars($post["rombel"]);
+    $rayon = htmlspecialchars($post["rayon"]);
+    $status = htmlspecialchars($post["status"]);
+    $foto = htmlspecialchars($post["foto"]);
 
-        $query = "UPDATE students SET
-                  nama = '$nama',
-                  nis = '$nis',
-                  rombel = '$rombel',
-                  rayon = '$rayon',
-                  status = '$status',
-                  foto = '$foto'
-                  WHERE id =$id
-                ";
+    $query = "UPDATE students SET
+              nama = '$nama',
+              foto = '$foto',
+              nis = '$nis',
+              rombel = '$rombel',
+              rayon = '$rayon',
+              status = '$status'
+              WHERE id =$id
+            ";
 
-mysqli_query($conn, $query);
-return mysqli_affected_rows($conn);
+    mysqli_query($conn, $query);
+    return mysqli_affected_rows($conn);
 }
 
 

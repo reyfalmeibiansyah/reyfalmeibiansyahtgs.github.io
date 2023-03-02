@@ -60,14 +60,7 @@ if( isset($_POST["submit"]) ){
             <p>
                 <label for="">Nama</label>
                 <input type="text" name="nama" id="" value="<?= $student["nama"]?>">
-            </p>
-            <p>
-            
-            <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Foto</label>
-        <input type="file" class="form-control" id="exampleInputPassword1" name="foto" value="<?= $student["foto"] ?>">
-        </div>
-            </p>
+            </p>      
             <p>
                 <label for="">Nis</label>
                 <input type="text" name="nis" id="" value="<?= $student["nis"]?>">
@@ -83,7 +76,14 @@ if( isset($_POST["submit"]) ){
             <p>
                 <label for="">Status</label>
                 <input type="text" name="status" id="" value="<?= $student["status"]?>">
-            </p>
+            </p> 
+            
+            <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Foto</label>
+                            <input type="file" class="form-control" id="exampleInputPassword1" name="foto"
+                                value="<?= $student["foto"] ?>">
+                        </div>
+            
             <button type="submit" name="submit">Masukkan Data Anda</button>
         </form>
     </p>

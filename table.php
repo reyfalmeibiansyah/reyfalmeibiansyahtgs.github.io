@@ -80,7 +80,7 @@
                   <a href="delete.php?id=<?= $student["id"]?>"onclick="return confirm('yakin data ingin di hapus?')">hapus</a>
                   </td>
                   <td>
-                  <a href="update.php?id=<?= $student["id"]?>"onclick="return confirm('yakin data ingin di uba?')">ubah</a>
+                  <a href="update.php?id=<?= $student["id"]?>"onclick="return confirm('yakin data ingin ubah?')">ubah</a>
                   </td>
 
                 </tr></div>
